@@ -5,15 +5,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
+
 public class ApplicationManager {
     WebDriver wd;
-HelperUser helperUser;
+    HelperUser helperUser;
 
     public void init() {
         wd = new ChromeDriver();
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        wd.navigate().to("https://telranedu.web.app/home");
+        wd.navigate().to("https://telranedu.web.app");
         helperUser= new HelperUser(wd);
 
     }
@@ -25,7 +26,4 @@ HelperUser helperUser;
     public HelperUser getHelperUser() {
         return helperUser;
     }
-
-
-
 }
