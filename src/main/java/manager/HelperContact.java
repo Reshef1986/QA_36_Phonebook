@@ -69,5 +69,18 @@ return list.size() > 0;
 
         click(By.xpath("//div[@class='add_form__2rsm2']//button"));
     }
+
+    public String getContactText (){
+
+      return   wd.findElement(By.cssSelector(".contact-page_leftdiv__yhyke")).getText();
+
+    }
+
+    public void remoovContact() {
+
+
+    }
+
 }
+
 
