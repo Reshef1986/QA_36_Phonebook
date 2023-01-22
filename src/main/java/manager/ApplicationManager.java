@@ -5,12 +5,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-
 public class ApplicationManager {
     WebDriver wd;
     HelperUser helperUser;
-
-
     HelperContact helperContact;
 
     public void init() {
@@ -23,15 +20,15 @@ public class ApplicationManager {
 
     }
 
-   public void stop() {
+    public void stop() {
         wd.quit();
     }
 
     public HelperUser getHelperUser() {
         return helperUser;
     }
-    public HelperContact getHelperContact() {
+
+    public HelperContact helperContact() {
         return helperContact;
     }
-
 }

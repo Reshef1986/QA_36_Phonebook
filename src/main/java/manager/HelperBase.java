@@ -1,5 +1,6 @@
 package manager;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,11 +14,16 @@ public class HelperBase {
     }
 
     public void type(By locator, String text){
-        if(text!=null){
+        if(text!=null){ pause(500);
+
             WebElement element = wd.findElement(locator);
             element.click();
             element.clear();
             element.sendKeys(text);
+        }else {
+            WebElement element = wd.findElement(locator);
+            element.click();
+            element.clear();
         }
 
     }
@@ -34,5 +40,22 @@ public void pause(int time){
     }
 }
 
+    public boolean isErrorMessageDisplayed(String massage) {
+        pause(500);
+        Alert alert= wd.switchTo().alert();
+        String text =alert.getText();
+        System.out.println(text);
 
+        // клик на кнопку  ок  ( 1 кнопка в алерте)
+        pause(500);
+        alert.accept();
+        pause(500);
+        return  text.contains(massage);
+        //click cancel
+        // alert.dismiss();
+
+        // алерт с возможностью печатать нажать ок и кенсал
+        //alert.sendKeys("Hello");
+
+    }
 }

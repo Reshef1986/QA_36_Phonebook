@@ -76,6 +76,7 @@ public class HelperUser extends HelperBase{
      openLoginRegistrationForm();
      fillLoginRegistrationForm(user.getEmail(), user.getPassword());
      submitLogin();
+     pause(1000);
 
     }
 }

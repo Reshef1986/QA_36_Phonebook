@@ -2,85 +2,86 @@ package manager;
 
 import model.Contact;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
-
 public class HelperContact extends HelperBase{
-
     public HelperContact(WebDriver wd) {
         super(wd);
     }
-public void openContactFormTabEntr() {
-    pause(2000);
-    Actions actions = new Actions(wd);
 
-    for (int i = 0; i < 4; i++) {
-        actions.sendKeys(Keys.TAB).release().perform();
-
-    }
-
-    actions.sendKeys(Keys.ENTER).release().perform();
-
-}
     public void openContactForm() {
         click(By.cssSelector("a[href='/add']"));
     }
 
-        //element.sendKeys(Keys.TAB);
-   // element.sendKeys(Keys.LEFT);
-   // element.sendKeys(Keys.ENTER);
-    //wd.findElement(By.cssSelector("a[href='/contacts']"));
-    //
-       //click(By.cssSelector("..active"));
-    //click(By.xpath("//a[normalize-space()='ADD']"));
-
-public boolean isContactBoockOpen(){
-        List<WebElement> list = wd.findElements(By.cssSelector("input[placeholder='Name']"));
-return list.size() > 0;
+    public void fillContactForm(Contact contact) {
+pause(1000);
+        type(By.cssSelector("input[placeholder='Name']"), contact.getName());
+        type(By.cssSelector("input[placeholder='Last Name']"), contact.getLastName());
+        pause(2000);
+        type(By.cssSelector("input[placeholder='Phone']"), contact.getPhone());
+        type(By.cssSelector("input[placeholder='email']"), contact.getEmail());
+        type(By.cssSelector("input[placeholder='Address']"), contact.getAddress());
+        type(By.cssSelector("input[placeholder='description']"), contact.getDescription());
 
     }
-    public void fillAddContactForm(Contact [] contacts) {
 
+    public void submitContactForm() {
+        //.add_form__2rsm2 button
+        click(By.xpath("//b[text()='Save']"));
+    }
 
-        for (int i =0;i<contacts.length;i++){
-            if (!isContactBoockOpen()){
-                openContactForm();
+    public boolean isContactAddedByName(String name) {
+        List<WebElement> list = wd.findElements(By.cssSelector("h2"));
+        for(WebElement el: list){
+            if(el.getText().equals(name)){
+                return true;
             }
-            type(By.cssSelector("input[placeholder='Name']"),contacts[i].getName());
-            type(By.cssSelector("input[placeholder='Last Name']"),contacts[i].getLastName());
-            type(By.cssSelector("input[placeholder='Phone']"),contacts[i].getPhone());
-            type(By.cssSelector("input[placeholder='email']"),contacts[i].getEmail());
-            type(By.cssSelector("input[placeholder='Address']"),contacts[i].getAddress());
-            type(By.cssSelector("input[placeholder='description']"),contacts[i].getDescription());
-         saveContact();
-            pause(2000);
-        }
-
-
 
         }
-
-    public void saveContact() {
-
-        click(By.xpath("//div[@class='add_form__2rsm2']//button"));
+        return false;
     }
 
-    public String getContactText (){
+    public boolean isContactAddedByPhone(String phone) {
+        List<WebElement> list = wd.findElements(By.cssSelector("h3"));
+        for(WebElement el: list){
+            if(el.getText().equals(phone)){
+                return true;
+            }
 
-      return   wd.findElement(By.cssSelector(".contact-page_leftdiv__yhyke")).getText();
+        }
+        return false;
 
     }
 
-    public void remoovContact() {
+
+    public boolean isContactAddedByEmail(String email) {
+        System.out.println(email);
+        List<WebElement> elements = wd.findElements(By.cssSelector("div[class='contact-item_card__2SOIM']"));
+        for (WebElement cont:elements) {
+            pause(200);
+            cont.click();
+            pause(500);
+            WebElement elementWithEmail = wd.findElement(By.cssSelector("div[class='contact-item-detailed_card__50dTS'] "));
+            if(elementWithEmail.getText().contains(email)){
+                return true;
+            }
 
 
+        }
+        return false;
     }
-
+public  boolean isNamtFill(){
+    List<WebElement> elements = wd.findElements(By.cssSelector("input[placeholder='Name']"));
+    return elements.size()>0;
 }
+    public boolean negativContactTectEmptyFill(){
 
-
+        if (isNamtFill()){
+            return true;
+        }
+        return false;
+    }
+}
