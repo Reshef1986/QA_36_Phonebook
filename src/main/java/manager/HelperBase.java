@@ -1,9 +1,6 @@
 package manager;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.testng.Assert;
 
 public class HelperBase {
@@ -14,20 +11,22 @@ public class HelperBase {
     }
 
     public void type(By locator, String text){
-        if(text!=null){ pause(500);
 
-            WebElement element = wd.findElement(locator);
+        WebElement element = wd.findElement(locator);
+        if(text!=null){
+
             element.click();
-            element.clear();
+            element.sendKeys(Keys.CONTROL+"a");
+            element.sendKeys(Keys.BACK_SPACE);
             element.sendKeys(text);
-        }else {
-            WebElement element = wd.findElement(locator);
-            element.click();
-            element.clear();
+        }
+
+        else {
+            element.sendKeys(Keys.CONTROL+"a");
+            element.sendKeys(Keys.BACK_SPACE);
         }
 
     }
-
     public void click(By locator){
         wd.findElement(locator).click();
     }

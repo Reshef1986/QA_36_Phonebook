@@ -55,7 +55,10 @@ pause(1000);
         return false;
 
     }
-
+    public boolean isContactAdded() {
+        List<WebElement> elements = wd.findElements(By.cssSelector("div[class='contact-item_card__2SOIM']"));
+        return elements.size()>0;
+    }
 
     public boolean isContactAddedByEmail(String email) {
         System.out.println(email);

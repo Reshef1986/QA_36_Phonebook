@@ -18,7 +18,7 @@ public class AddNewContactTests extends TestBase {
         }
     }
 
-    @Test(enabled=false)
+    @Test
     public void addContactSuccessAllFields() {
         Random random = new Random();
         int i = random.nextInt(1000) + 1000;
@@ -41,7 +41,7 @@ public class AddNewContactTests extends TestBase {
 
     }
 
-    @Test(enabled=false)
+    @Test
     public void addContactSuccessRequiredFields() {
         Random random = new Random();
         int i = random.nextInt(1000) + 1000;
@@ -70,28 +70,8 @@ public class AddNewContactTests extends TestBase {
         Random random = new Random();
         int i = random.nextInt(1000) + 1000;
         Contact contact = Contact.builder()
-
+                .name("")
                 .lastName("Simpson2")
-                .address("RT")
-                .phone("0506967" + i)
-                .email("reshef2" + i + "@gmail")
-                .build();
-        System.out.println(contact.toString());
-
-        app.helperContact().openContactForm();
-        app.helperContact().fillContactForm(contact);
-        app.helperContact().submitContactForm();
-        Assert.assertTrue(app.helperContact().negativContactTectEmptyFill());
-
-    }
-
-    @Test
-    public void addContactEmptylastName() {
-        Random random = new Random();
-        int i = random.nextInt(1000) + 1000;
-        Contact contact = Contact.builder()
-              //  .name("Zalman1986" + i)
-                .name("Zalman1")
                 .address("RT")
                 .phone("0506967" + i)
                 .email("reshef2" + i + "@gmail")
@@ -103,8 +83,35 @@ public class AddNewContactTests extends TestBase {
         app.helperContact().submitContactForm();
         app.getHelperUser().pause(500);
         Assert.assertTrue(app.helperContact().negativContactTectEmptyFill());
+        app.getHelperUser().pause(500);
+        Assert.assertTrue(!app.helperContact().isContactAdded());
+
     }
-    @Test(enabled=false)
+
+    @Test
+    public void addContactEmptylastName() {
+        Random random = new Random();
+        int i = random.nextInt(1000) + 1000;
+        Contact contact = Contact.builder()
+              //  .name("Zalman1986" + i)
+                .name("Zalman1")
+                .lastName("")
+
+                .address("RT")
+                .phone("0506967" + i)
+                .email("reshef2" + i + "@gmail")
+                .build();
+        System.out.println(contact.toString());
+
+        app.helperContact().openContactForm();
+        app.helperContact().fillContactForm(contact);
+        app.helperContact().submitContactForm();
+        app.getHelperUser().pause(500);
+        Assert.assertTrue(app.helperContact().negativContactTectEmptyFill());
+        app.getHelperUser().pause(500);
+        Assert.assertTrue(!app.helperContact().isContactAdded());
+    }
+    @Test
     public void addContactWrongPhone() {
         Random random = new Random();
         int i = random.nextInt(1000) + 1000;
@@ -120,11 +127,12 @@ public class AddNewContactTests extends TestBase {
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
         app.helperContact().submitContactForm();
+        app.getHelperUser().pause(500);
   Assert.assertTrue(app.helperContact().isErrorMessageDisplayed("Phone not valid: Phone number must contain only digits! And length min 10, max 15"));
 
 
     }
-    @Test(enabled=false)
+    @Test
     public void addContactWrongEmail() {
         Random random = new Random();
         int i = random.nextInt(1000) + 1000;
@@ -140,6 +148,7 @@ public class AddNewContactTests extends TestBase {
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
         app.helperContact().submitContactForm();
+        app.getHelperUser().pause(500);
         Assert.assertTrue(app.helperContact().isErrorMessageDisplayed("Email not valid: должно иметь формат адреса электронной почты"));
 
     }
@@ -150,6 +159,7 @@ public class AddNewContactTests extends TestBase {
         Contact contact = Contact.builder()
                 .name("Zalman1" + i)
                 .lastName("Simpson")
+                .address("")
                 .phone("0506967" + i)
                 .email("reshef2" + i + "@gmail")
                 .build();
@@ -158,7 +168,10 @@ public class AddNewContactTests extends TestBase {
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
         app.helperContact().submitContactForm();
+        app.getHelperUser().pause(500);
         Assert.assertTrue(app.helperContact().negativContactTectEmptyFill());
+        app.getHelperUser().pause(500);
+        Assert.assertTrue(!app.helperContact().isContactAdded());
 
     }
 
