@@ -17,10 +17,8 @@ public class HelperContact extends HelperBase{
     }
 
     public void fillContactForm(Contact contact) {
-pause(1000);
         type(By.cssSelector("input[placeholder='Name']"), contact.getName());
         type(By.cssSelector("input[placeholder='Last Name']"), contact.getLastName());
-        pause(2000);
         type(By.cssSelector("input[placeholder='Phone']"), contact.getPhone());
         type(By.cssSelector("input[placeholder='email']"), contact.getEmail());
         type(By.cssSelector("input[placeholder='Address']"), contact.getAddress());
@@ -55,35 +53,20 @@ pause(1000);
         return false;
 
     }
-    public boolean isContactAdded() {
-        List<WebElement> elements = wd.findElements(By.cssSelector("div[class='contact-item_card__2SOIM']"));
-        return elements.size()>0;
+
+
+    public boolean isAddPageStillDisplayed() {
+        return wd.findElements(By.cssSelector("a.active[href='/add']")).size()>0;
     }
 
     public boolean isContactAddedByEmail(String email) {
-        System.out.println(email);
-        List<WebElement> elements = wd.findElements(By.cssSelector("div[class='contact-item_card__2SOIM']"));
-        for (WebElement cont:elements) {
-            pause(200);
-            cont.click();
-            pause(500);
-            WebElement elementWithEmail = wd.findElement(By.cssSelector("div[class='contact-item-detailed_card__50dTS'] "));
-            if(elementWithEmail.getText().contains(email)){
+        List<WebElement> lis = wd.findElements(By.cssSelector(".contact-item_card__2SOIM"));
+        for (WebElement el:lis){
+            el.click();
+            String text = wd.findElement(By.cssSelector(".contact-item-detailed_card__50dTS")).getText();
+            if(text.contains(email)){
                 return true;
             }
-
-
-        }
-        return false;
-    }
-public  boolean isNamtFill(){
-    List<WebElement> elements = wd.findElements(By.cssSelector("input[placeholder='Name']"));
-    return elements.size()>0;
-}
-    public boolean negativContactTectEmptyFill(){
-
-        if (isNamtFill()){
-            return true;
         }
         return false;
     }

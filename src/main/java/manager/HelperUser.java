@@ -5,9 +5,10 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-
+import java.time.Duration;
 import java.util.List;
 
 public class HelperUser extends HelperBase{
@@ -15,15 +16,20 @@ public class HelperUser extends HelperBase{
         super(wd);
     }
 
-   public void openLoginRegistrationForm(){
-        click(By.xpath("//a[3]"));
+    public void openLoginRegistrationForm(){
+        click(By.cssSelector("a[href='/login']"));
     }
 
-        public void fillLoginRegistrationForm(String email,String password){
+    public void fillLoginRegistrationForm(String email,String password){
         // for email
-        type(By.cssSelector("[name='email']"),email);
+        type(By.name("email"),email);
         // for password
-        type(By.cssSelector("[name='password']"),password);
+        type(By.name("password"),password);
+
+    }
+    public void fillLoginRegistrationForm(User user){
+        type(By.name("email"), user.getEmail());
+        type(By.name("password"), user.getPassword());
 
     }
 
@@ -32,51 +38,54 @@ public class HelperUser extends HelperBase{
 
     }
 
-
     public boolean isLogged() {
-       try {
-            //return wd.findElement(By.xpath("//button")).isDisplayed();
-        }catch (Exception e){
-            return  false;
-        }
-
+//        try {
+//            wd.findElement(By.xpath("//button[text()='Sign Out']")).isDisplayed();
+//            return true;
+//        }catch (Exception e){
+//            return false;
+//        }
         List<WebElement> list  = wd.findElements(By.xpath("//button[text()='Sign Out']"));
-
-        return  list.size() > 0;
+        // List<WebElement> list  = wd.findElements(By.xpath("//button"));
+        return list.size() > 0;
     }
 
-    public void logOut() {
-        click(By.xpath("//button"));
+    public void logout() {
+        // click(By.xpath("//button"));
+        click(By.xpath("//button[text()='Sign Out']"));
     }
+    public boolean isErrorMessageDisplayed(String message) {
+        // Alert alert = wd.switchTo().alert();
 
-    public boolean isErrorMessageDisplayed(String massage) {
-     Alert alert= wd.switchTo().alert();
-     String text =alert.getText();
+        Alert alert =new WebDriverWait(wd, Duration.ofSeconds(9))
+                .until(ExpectedConditions.alertIsPresent());
+
+
+        String text = alert.getText();
+        System.out.println(text);
+        alert.accept();
+        return text.contains(message);
+    }
+    public boolean isErrorMessageDisplayedOld(String message) {
+        Alert alert = wd.switchTo().alert();
+        String text = alert.getText();
         System.out.println(text);
 
-        // клик на кнопку  ок  ( 1 кнопка в алерте)
+        // click ok
         alert.accept();
-        return  text.contains(massage);
         //click cancel
-       // alert.dismiss();
-
-        // алерт с возможностью печатать нажать ок и кенсал
+        //alert.dismiss();
         //alert.sendKeys("Hello");
-
+        return text.contains(message);
     }
 
     public void submitRegistration() {
-        click(By.cssSelector("[name ='registration']"));
+        click(By.cssSelector("[name='registration']"));
     }
 
-    public void login(String email,String password) {
-    }
-
-    public  void login(User user){
-     openLoginRegistrationForm();
-     fillLoginRegistrationForm(user.getEmail(), user.getPassword());
-     submitLogin();
-     pause(1000);
-
+    public void login(User user) {
+        openLoginRegistrationForm();
+        fillLoginRegistrationForm(user);
+        submitLogin();
     }
 }

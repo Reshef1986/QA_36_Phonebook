@@ -1,0 +1,96 @@
+20:55:20.022  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+20:55:20.686  INFO  manager.ApplicationManager - Current Url-->https://telranedu.web.app/home
+20:55:20.710  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+20:55:25.764  INFO  tests.TestBase - Login with valid : email = reshef1986@gmail.com, password = Rr6146858! 
+20:55:27.068  INFO  tests.TestBase - Tests success
+18:20:53.268  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:20:54.259  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:20:54.290  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+18:20:59.333  INFO  tests.TestBase - Login with valid data :  email: 'noa@gmail.com' & password: 'Nnoa12345$' 
+18:21:00.633  INFO  tests.TestBase - Tests success
+18:21:00.638  INFO  tests.TestBase - The name of starts method is --->loginSuccessNew
+18:21:00.698  INFO  tests.TestBase -  I need logout
+18:21:01.312  INFO  tests.TestBase - The name of starts method is --->loginUnregisterUser
+18:21:01.367  INFO  tests.TestBase -  I need logout
+18:21:02.103  INFO  tests.TestBase - The name of starts method is --->loginWrongEmail
+18:21:07.891  INFO  tests.TestBase - Error message is : 'Wrong email or password' 
+18:21:07.893  INFO  tests.TestBase - The name of starts method is --->loginWrongPassword
+18:35:39.511  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:35:40.195  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:35:40.229  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+18:35:45.265  INFO  tests.TestBase - Login with valid data :  email: 'noa@gmail.com' & password: 'Nnoa12345$' 
+18:35:46.660  INFO  tests.TestBase - The name of starts method is --->loginSuccessNew
+18:38:15.979  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:38:16.666  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:38:16.702  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+18:38:21.758  INFO  tests.TestBase - Login with valid data :  email: 'noa@gmail.com' & password: 'Nnoa12345$' 
+18:38:23.180  INFO  tests.TestBase - The name of starts method is --->loginSuccessNew
+18:39:46.015  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:39:46.686  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:39:46.713  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+18:39:51.772  INFO  tests.TestBase - Login with valid data :  email: reshef1986@gmail.com: Rr6146858!
+18:39:53.061  INFO  tests.TestBase - Tests success
+18:39:53.064  INFO  tests.TestBase - The name of starts method is --->loginSuccessNew
+18:39:53.124  INFO  tests.TestBase -  I need logout
+18:39:53.782  INFO  tests.TestBase - The name of starts method is --->loginUnregisterUser
+18:39:53.844  INFO  tests.TestBase -  I need logout
+18:39:54.606  INFO  tests.TestBase - The name of starts method is --->loginWrongEmail
+18:40:00.425  INFO  tests.TestBase - Error message is : 'Wrong email or password' 
+18:40:00.427  INFO  tests.TestBase - The name of starts method is --->loginWrongPassword
+18:42:53.977  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:42:54.625  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:42:54.658  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+18:42:59.729  INFO  tests.TestBase - Login with valid data :  email: reshef1986@gmail.com: Rr6146858!
+18:43:05.167  INFO  tests.TestBase - Tests success
+18:43:05.173  INFO  tests.TestBase - The name of starts method is --->loginSuccessNew
+18:43:05.230  INFO  tests.TestBase -  I need logout
+18:43:09.918  INFO  tests.TestBase - The name of starts method is --->loginUnregisterUser
+18:43:09.971  INFO  tests.TestBase -  I need logout
+18:43:14.796  INFO  tests.TestBase - The name of starts method is --->loginWrongEmail
+18:43:24.630  INFO  tests.TestBase - Error message is : 'Wrong email or password' 
+18:43:24.633  INFO  tests.TestBase - The name of starts method is --->loginWrongPassword
+18:45:15.937  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:45:16.625  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:45:16.662  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+18:45:21.727  INFO  tests.TestBase - Login with valid data :  email: reshef1986@gmail.com: Rr6146858!
+18:45:27.182  INFO  tests.TestBase - Tests success
+18:45:27.186  INFO  tests.TestBase - The name of starts method is --->loginSuccessNew
+18:45:27.247  INFO  tests.TestBase -  I need logout
+18:45:32.030  INFO  tests.TestBase - The name of starts method is --->loginUnregisterUser
+18:45:32.078  INFO  tests.TestBase -  I need logout
+18:45:36.945  INFO  tests.TestBase - The name of starts method is --->loginWrongEmail
+18:45:46.826  INFO  tests.TestBase - Error message is : 'Wrong email or password' 
+18:45:46.828  INFO  tests.TestBase - The name of starts method is --->loginWrongPassword
+18:46:23.400  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:46:24.088  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:46:24.118  INFO  tests.TestBase - The name of starts method is --->addContactSuccessAllFields
+18:46:33.726  INFO  tests.TestBase - Tests start with data : Contact(name=Lisa1280, lastName=Simpson, phone=11111111280, email=reshef19861280@gmail.com, address=NY, description=All fields)
+18:46:50.571  INFO  tests.TestBase - The name of starts method is --->addContactSuccessRequiredFields
+18:47:04.664  INFO  tests.TestBase - The name of starts method is --->addNewContactWrongAddress
+18:47:17.831  INFO  tests.TestBase - The name of starts method is --->addNewContactWrongEmail
+18:47:31.317  INFO  tests.TestBase - The name of starts method is --->addNewContactWrongLastName
+18:53:35.157  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:53:35.852  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:53:35.894  INFO  tests.TestBase - The name of starts method is --->addContactSuccessAllFields
+18:53:41.526  INFO  tests.TestBase - Tests start with data : Contact(name=Lisa1542, lastName=Simpson, phone=11111111542, email=reshef19861542@gmail.com, address=NY, description=All fields)
+18:53:47.271  INFO  tests.TestBase - The name of starts method is --->addContactSuccessRequiredFields
+18:53:49.714  INFO  tests.TestBase - The name of starts method is --->addNewContactWrongAddress
+18:53:50.632  INFO  tests.TestBase - The name of starts method is --->addNewContactWrongEmail
+18:53:51.931  INFO  tests.TestBase - The name of starts method is --->addNewContactWrongLastName
+18:53:52.693  INFO  tests.TestBase - The name of starts method is --->addNewContactWrongName
+18:53:53.391  INFO  tests.TestBase - The name of starts method is --->addNewContactWrongPhone
+18:54:41.962  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:54:42.630  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:54:42.673  INFO  tests.TestBase - The name of starts method is --->addNewContactWrongEmail
+18:55:05.611  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:55:06.306  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:55:06.338  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+18:55:11.392  INFO  tests.TestBase - Login with valid data :  email: reshef1986@gmail.com: Rr6146858!
+18:55:12.757  INFO  tests.TestBase - Tests success
+18:55:12.762  INFO  tests.TestBase - The name of starts method is --->loginSuccessNew
+18:55:12.826  INFO  tests.TestBase -  I need logout
+18:55:13.480  INFO  tests.TestBase - The name of starts method is --->loginUnregisterUser
+18:55:13.533  INFO  tests.TestBase -  I need logout
+18:55:14.305  INFO  tests.TestBase - The name of starts method is --->loginWrongEmail
+18:55:20.170  INFO  tests.TestBase - Error message is : 'Wrong email or password' 
+18:55:20.173  INFO  tests.TestBase - The name of starts method is --->loginWrongPassword
