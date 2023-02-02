@@ -1,0 +1,71 @@
+19:55:16.291  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+19:55:17.671  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+19:55:17.716  INFO  tests.TestBase - The name of starts method is --->registrationSuccess
+19:55:17.725  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: a[href='/login']
+19:55:17.769  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: a[href='/login']
+19:55:17.849  INFO  manager.ListenerWD - Before find element ->>>>By.name: email
+19:55:17.880  INFO  manager.ListenerWD - After find element ->>>>By.name: email
+19:55:18.558  INFO  manager.ListenerWD - Before find element ->>>>By.name: password
+19:55:18.585  INFO  manager.ListenerWD - After find element ->>>>By.name: password
+19:55:19.219  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: [name='registration']
+19:55:19.245  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: [name='registration']
+19:55:19.294  INFO  manager.ListenerWD - Before find elements ->>>>By.xpath: //button[text()='Sign Out']
+19:55:20.208  INFO  manager.ListenerWD - After find elements ->>>>By.xpath: //button[text()='Sign Out']
+19:55:20.211  INFO  manager.ListenerWD - List suze is ->>>>1
+19:55:20.220  INFO  tests.TestBase - The name of starts method is --->registrationUserAlreadyExists
+19:55:20.220  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: a[href='/login']
+19:55:25.285  INFO  manager.ListenerWD - The have a 'problem'
+19:55:25.285  INFO  manager.ListenerWD - ++++++++++++++++++++++++++++++++++++
+19:55:25.285  INFO  manager.ListenerWD - Method method ->>>>findElement
+19:55:25.286  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+19:55:25.288  INFO  manager.ListenerWD - InvocationTargetException getTargetException() org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/login']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [418260deb15042145f3739457f1f14ee, findElement {using=css selector, value=a[href='/login']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\97252\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59847/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 418260deb15042145f3739457f1f14ee
+19:55:25.289  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+19:55:25.289  INFO  manager.ListenerWD - Object target ->>>>>>ChromeDriver: chrome on WINDOWS (418260deb15042145f3739457f1f14ee)
+19:55:25.290  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+19:55:25.290  INFO  manager.ListenerWD - Screen  whith errror is ->>>>src/test/screenshots/screen-431.png
+19:55:25.839  INFO  tests.TestBase - The name of starts method is --->registrationWrongEmail
+19:55:25.840  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: a[href='/login']
+19:55:30.904  INFO  manager.ListenerWD - The have a 'problem'
+19:55:30.904  INFO  manager.ListenerWD - ++++++++++++++++++++++++++++++++++++
+19:55:30.904  INFO  manager.ListenerWD - Method method ->>>>findElement
+19:55:30.904  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+19:55:30.905  INFO  manager.ListenerWD - InvocationTargetException getTargetException() org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/login']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [418260deb15042145f3739457f1f14ee, findElement {using=css selector, value=a[href='/login']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\97252\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59847/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 418260deb15042145f3739457f1f14ee
+19:55:30.905  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+19:55:30.906  INFO  manager.ListenerWD - Object target ->>>>>>ChromeDriver: chrome on WINDOWS (418260deb15042145f3739457f1f14ee)
+19:55:30.906  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+19:55:30.906  INFO  manager.ListenerWD - Screen  whith errror is ->>>>src/test/screenshots/screen-635.png
+19:55:31.401  INFO  tests.TestBase - The name of starts method is --->registrationWrongPassword
+19:55:31.403  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: a[href='/login']
+19:55:36.414  INFO  manager.ListenerWD - The have a 'problem'
+19:55:36.414  INFO  manager.ListenerWD - ++++++++++++++++++++++++++++++++++++
+19:55:36.414  INFO  manager.ListenerWD - Method method ->>>>findElement
+19:55:36.414  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+19:55:36.415  INFO  manager.ListenerWD - InvocationTargetException getTargetException() org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/login']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [418260deb15042145f3739457f1f14ee, findElement {using=css selector, value=a[href='/login']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\97252\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59847/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 418260deb15042145f3739457f1f14ee
+19:55:36.415  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+19:55:36.416  INFO  manager.ListenerWD - Object target ->>>>>>ChromeDriver: chrome on WINDOWS (418260deb15042145f3739457f1f14ee)
+19:55:36.416  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+19:55:36.416  INFO  manager.ListenerWD - Screen  whith errror is ->>>>src/test/screenshots/screen-328.png

@@ -9,17 +9,17 @@ import java.util.Random;
 
 public class RegistrationTests extends TestBase{
 
-    //    @BeforeMethod
-//    public void preCondition(){
-//        if(app.getHelperUser().isLogged()){
-//            app.getHelperUser().logout();
-//        }
-//
-//    }
+       @BeforeMethod
+    public void preCondition(){
+       if(app.getHelperUser().isLogged()){
+            app.getHelperUser().logout();
+       }
+
+    }
     @Test
     public void registrationSuccess(){
         Random random = new Random();
-        int i= random.nextInt(100);
+        int i= random.nextInt(1000);
         String email = "reshef1986"+i+"@gmail.com";
 
         app.getHelperUser().openLoginRegistrationForm();
@@ -50,6 +50,7 @@ public class RegistrationTests extends TestBase{
     public void registrationUserAlreadyExists(){
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("reshef1986@gmail.com","Rr6146858!");
+        app.getHelperUser().submitRegistration();
         Assert.assertFalse(app.getHelperUser().isLogged());
         Assert.assertTrue(app.getHelperUser().isErrorMessageDisplayed("User already exist"));
 

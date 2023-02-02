@@ -1,0 +1,48 @@
+18:03:20.057  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+18:03:21.533  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+18:03:21.573  INFO  tests.TestBase - The name of starts method is --->addNewContactWrongPhone
+18:03:21.575  INFO  manager.ListenerWD - Before find elements ->>>>By.xpath: //button[text()='Sign Out']
+18:03:26.630  INFO  manager.ListenerWD - After find elements ->>>>By.xpath: //button[text()='Sign Out']
+18:03:26.633  INFO  manager.ListenerWD - List suze is ->>>>0
+18:03:26.636  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: a[href='/login']
+18:03:26.681  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: a[href='/login']
+18:03:26.760  INFO  manager.ListenerWD - Before find element ->>>>By.name: email
+18:03:26.793  INFO  manager.ListenerWD - After find element ->>>>By.name: email
+18:03:26.972  INFO  manager.ListenerWD - Before find element ->>>>By.name: password
+18:03:27.001  INFO  manager.ListenerWD - After find element ->>>>By.name: password
+18:03:27.148  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: [name='login']
+18:03:27.178  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: [name='login']
+18:03:27.251  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: a[href='/add']
+18:03:28.092  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: a[href='/add']
+18:03:28.144  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: input[placeholder='Name']
+18:03:28.177  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: input[placeholder='Name']
+18:03:28.318  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: input[placeholder='Last Name']
+18:03:28.348  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: input[placeholder='Last Name']
+18:03:28.471  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: input[placeholder='Phone']
+18:03:28.498  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: input[placeholder='Phone']
+18:03:28.617  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: input[placeholder='email']
+18:03:28.644  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: input[placeholder='email']
+18:03:28.782  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: input[placeholder='Address']
+18:03:28.812  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: input[placeholder='Address']
+18:03:28.930  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: input[placeholder='description']
+18:03:28.957  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: input[placeholder='description']
+18:03:29.084  INFO  manager.ListenerWD - Before find element ->>>>By.xpath: //b[text()='Save']
+18:03:29.110  INFO  manager.ListenerWD - After find element ->>>>By.xpath: //b[text()='Save']
+18:03:29.148  INFO  manager.ListenerWD - Before find elements ->>>>By.cssSelector: a.active[href='/add']
+18:03:29.173  INFO  manager.ListenerWD - After find elements ->>>>By.cssSelector: a.active[href='/add']
+18:03:29.173  INFO  manager.ListenerWD - List suze is ->>>>1
+18:03:29.203  INFO  manager.ListenerWD - The have a 'problem'
+18:03:29.203  INFO  manager.ListenerWD - ++++++++++++++++++++++++++++++++++++
+18:03:29.203  INFO  manager.ListenerWD - Method method ->>>>alert
+18:03:29.204  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+18:03:29.206  INFO  manager.ListenerWD - InvocationTargetException getTargetException() org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c4c50165e1bbf083024b7443216ece2a, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\97252\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56638/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c4c50165e1bbf083024b7443216ece2a
+18:03:29.206  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+18:03:29.207  INFO  manager.ListenerWD - Object target ->>>>>>org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@664632e9
+18:03:29.207  INFO  manager.ListenerWD - ++++++++++++++++++++++++++

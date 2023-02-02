@@ -46,6 +46,8 @@ public class HelperUser extends HelperBase{
 //        }catch (Exception e){
 //            return false;
 //        }
+
+
         List<WebElement> list  = wd.findElements(By.xpath("//button[text()='Sign Out']"));
 
         // List<WebElement> list  = wd.findElements(By.xpath("//button"));
@@ -62,10 +64,12 @@ public class HelperUser extends HelperBase{
         Alert alert =new WebDriverWait(wd, Duration.ofSeconds(9))
                 .until(ExpectedConditions.alertIsPresent());
 
-
+        pause(500);
         String text = alert.getText();
         System.out.println(text);
+      ;
         alert.accept();
+
         return text.contains(message);
     }
     public boolean isErrorMessageDisplayedOld(String message) {

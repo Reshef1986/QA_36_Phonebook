@@ -19,10 +19,12 @@ public class HelperBase {
 
             element.click();
             element.sendKeys(Keys.CONTROL + "a");
+            pause(500);
             element.sendKeys(Keys.BACK_SPACE);
             element.sendKeys(text);
         } else {
             element.sendKeys(Keys.CONTROL + "a");
+            pause(500);
             element.sendKeys(Keys.BACK_SPACE);
         }
     }

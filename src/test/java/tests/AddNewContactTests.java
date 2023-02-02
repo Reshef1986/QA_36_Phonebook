@@ -130,7 +130,7 @@ public class AddNewContactTests extends TestBase{
                 .address("NY")
                 .phone("")
                 .email("john@mail.ru")
-                .description("wrong Last name").build();
+                .description("wrong WrongPhone").build();
         System.out.println(contact.toString());
 
         app.helperContact().openContactForm();
@@ -149,14 +149,15 @@ public class AddNewContactTests extends TestBase{
                 .address("NY")
                 .phone("11111234567")
                 .email("johnmail.ru")
-                .description("wrong Last name").build();
+                .description("wrong WrongEmail" +
+                        "").build();
         System.out.println(contact.toString());
 
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
         app.helperContact().submitContactForm();
         Assert.assertTrue(app.helperContact().isAddPageStillDisplayed());
-        Assert.assertTrue(app.getHelperUser().isErrorMessageDisplayed("Email not valid: должно иметь формат адреса электронной почты"));
+        Assert.assertTrue(app.getHelperUser().isErrorMessageDisplayed("Email not valid"));
 
     }
 
