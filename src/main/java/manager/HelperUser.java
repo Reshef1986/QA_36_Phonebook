@@ -67,7 +67,7 @@ public class HelperUser extends HelperBase{
         pause(500);
         String text = alert.getText();
         System.out.println(text);
-      ;
+
         alert.accept();
 
         return text.contains(message);

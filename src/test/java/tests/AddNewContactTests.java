@@ -10,14 +10,14 @@ import java.util.Random;
 
 public class AddNewContactTests extends TestBase{
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         if(!app.getHelperUser().isLogged()){
             app.getHelperUser().login(User.builder().email("reshef1986@gmail.com").password("Rr6146858!").build());
         }
     }
 
-    @Test
+    @Test (groups = {"smoke"})
     public void addContactSuccessAllFields(){
         Random random = new Random();
         int i= random.nextInt(1000)+1000;

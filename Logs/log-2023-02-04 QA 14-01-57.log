@@ -1,0 +1,52 @@
+14:01:59.441  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+14:02:01.033  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+14:02:01.039  INFO  manager.ListenerTNG - onStart->>>>>Gradle test
+14:02:01.066  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+14:02:01.068  INFO  manager.ListenerWD - Before find elements ->>>>By.xpath: //button[text()='Sign Out']
+14:02:03.881  INFO  manager.ListenerWD - After find elements ->>>>By.xpath: //button[text()='Sign Out']
+14:02:03.889  INFO  manager.ListenerWD - List suze is ->>>>0
+14:02:03.892  INFO  manager.ListenerTNG - onTestStart->>>>>loginSuccess
+14:02:03.905  INFO  tests.TestBase - Login with valid data :  email: reshef1986@gmail.com & password: Rr6146858!
+14:02:03.906  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: a[href='/login']
+14:02:03.936  INFO  manager.ListenerWD - The have a 'problem'
+14:02:03.937  INFO  manager.ListenerWD - ++++++++++++++++++++++++++++++++++++
+14:02:03.938  INFO  manager.ListenerWD - Method method ->>>>findElement
+14:02:03.939  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+14:02:03.945  INFO  manager.ListenerWD - InvocationTargetException getTargetException() org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8cc1e8f2998017ce61d60efd4f546add, findElement {using=css selector, value=a[href='/login']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\97252\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51414/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cc1e8f2998017ce61d60efd4f546add
+14:02:03.945  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+14:02:03.946  INFO  manager.ListenerWD - Object target ->>>>>>ChromeDriver: chrome on WINDOWS (8cc1e8f2998017ce61d60efd4f546add)
+14:02:03.946  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+14:02:03.952  INFO  manager.ListenerWD - Screen  whith errror is ->>>>src/test/screenshots/screen-494.png
+14:02:04.013  INFO  manager.ListenerTNG - onTestFailure->>>>>loginSuccess
+14:02:04.015  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+14:02:04.016  INFO  manager.ListenerWD - Before find elements ->>>>By.xpath: //button[text()='Sign Out']
+14:02:04.071  INFO  manager.ListenerWD - The have a 'problem'
+14:02:04.071  INFO  manager.ListenerWD - ++++++++++++++++++++++++++++++++++++
+14:02:04.072  INFO  manager.ListenerWD - Method method ->>>>findElements
+14:02:04.072  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+14:02:04.072  INFO  manager.ListenerWD - InvocationTargetException getTargetException() org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8cc1e8f2998017ce61d60efd4f546add, findElements {using=xpath, value=//button[text()='Sign Out']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\97252\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51414/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cc1e8f2998017ce61d60efd4f546add
+14:02:04.072  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+14:02:04.073  INFO  manager.ListenerWD - Object target ->>>>>>ChromeDriver: chrome on WINDOWS (8cc1e8f2998017ce61d60efd4f546add)
+14:02:04.073  INFO  manager.ListenerWD - ++++++++++++++++++++++++++
+14:02:04.073  INFO  manager.ListenerWD - Screen  whith errror is ->>>>src/test/screenshots/screen-602.png
+14:02:04.120  INFO  manager.ListenerTNG - onTestStart->>>>>loginSuccess
+14:02:04.121  INFO  manager.ListenerTNG - onTestSkipped->>>>>loginSuccess
+14:02:04.124  INFO  manager.ListenerTNG - onTestStart->>>>>loginSuccess
+14:02:04.124  INFO  manager.ListenerTNG - onTestSkipped->>>>>loginSuccess
+14:02:04.129  INFO  manager.ListenerTNG - onFinish->>>>>Gradle test

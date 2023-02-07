@@ -1,0 +1,67 @@
+20:25:49.925  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+20:25:52.031  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+20:25:52.039  INFO  manager.ListenerTNG - onStart->>>>>Gradle test
+20:25:52.073  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+20:25:52.075  INFO  manager.ListenerWD - Before find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:25:57.093  INFO  manager.ListenerWD - After find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:25:57.096  INFO  manager.ListenerWD - List suze is ->>>>0
+20:25:57.103  INFO  manager.ListenerTNG - onTestStart->>>>>loginSuccess
+20:25:57.109  INFO  tests.TestBase - Login with valid data :  email: reshef1986@gmail.com & password: Rr6146858!
+20:25:57.110  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: a[href='/login']
+20:25:57.145  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: a[href='/login']
+20:25:57.219  INFO  manager.ListenerWD - Before find element ->>>>By.name: email
+20:25:57.255  INFO  manager.ListenerWD - After find element ->>>>By.name: email
+20:25:57.915  INFO  manager.ListenerWD - Before find element ->>>>By.name: password
+20:25:57.937  INFO  manager.ListenerWD - After find element ->>>>By.name: password
+20:25:58.566  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: [name='login']
+20:25:58.590  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: [name='login']
+20:25:58.633  INFO  manager.ListenerWD - Before find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:25:59.884  INFO  manager.ListenerWD - After find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:25:59.885  INFO  manager.ListenerWD - List suze is ->>>>1
+20:25:59.887  INFO  tests.TestBase - Tests success
+20:25:59.890  INFO  manager.ListenerTNG - onTestSuccess ->>>>>>loginSuccess
+20:25:59.891  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+20:25:59.892  INFO  manager.ListenerWD - Before find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:25:59.913  INFO  manager.ListenerWD - After find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:25:59.914  INFO  manager.ListenerWD - List suze is ->>>>1
+20:25:59.914  INFO  manager.ListenerWD - Before find element ->>>>By.xpath: //button[text()='Sign Out']
+20:25:59.935  INFO  manager.ListenerWD - After find element ->>>>By.xpath: //button[text()='Sign Out']
+20:25:59.983  INFO  tests.TestBase -  I need logout
+20:25:59.984  INFO  manager.ListenerTNG - onTestStart->>>>>loginSuccess
+20:25:59.985  INFO  tests.TestBase - Login with valid data :  email: reshef1986@gmail.com & password: Rr6146858!
+20:25:59.985  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: a[href='/login']
+20:26:00.006  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: a[href='/login']
+20:26:00.046  INFO  manager.ListenerWD - Before find element ->>>>By.name: email
+20:26:00.063  INFO  manager.ListenerWD - After find element ->>>>By.name: email
+20:26:00.704  INFO  manager.ListenerWD - Before find element ->>>>By.name: password
+20:26:00.721  INFO  manager.ListenerWD - After find element ->>>>By.name: password
+20:26:01.354  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: [name='login']
+20:26:01.369  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: [name='login']
+20:26:01.405  INFO  manager.ListenerWD - Before find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:26:01.789  INFO  manager.ListenerWD - After find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:26:01.790  INFO  manager.ListenerWD - List suze is ->>>>1
+20:26:01.790  INFO  tests.TestBase - Tests success
+20:26:01.790  INFO  manager.ListenerTNG - onTestSuccess ->>>>>>loginSuccess
+20:26:01.791  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+20:26:01.791  INFO  manager.ListenerWD - Before find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:26:01.807  INFO  manager.ListenerWD - After find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:26:01.807  INFO  manager.ListenerWD - List suze is ->>>>1
+20:26:01.807  INFO  manager.ListenerWD - Before find element ->>>>By.xpath: //button[text()='Sign Out']
+20:26:01.825  INFO  manager.ListenerWD - After find element ->>>>By.xpath: //button[text()='Sign Out']
+20:26:01.863  INFO  tests.TestBase -  I need logout
+20:26:01.864  INFO  manager.ListenerTNG - onTestStart->>>>>loginSuccess
+20:26:01.864  INFO  tests.TestBase - Login with valid data :  email: reshef1986@gmail.com & password: Rr6146858!
+20:26:01.864  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: a[href='/login']
+20:26:01.880  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: a[href='/login']
+20:26:01.913  INFO  manager.ListenerWD - Before find element ->>>>By.name: email
+20:26:01.928  INFO  manager.ListenerWD - After find element ->>>>By.name: email
+20:26:02.569  INFO  manager.ListenerWD - Before find element ->>>>By.name: password
+20:26:02.584  INFO  manager.ListenerWD - After find element ->>>>By.name: password
+20:26:03.220  INFO  manager.ListenerWD - Before find element ->>>>By.cssSelector: [name='login']
+20:26:03.237  INFO  manager.ListenerWD - After find element ->>>>By.cssSelector: [name='login']
+20:26:03.274  INFO  manager.ListenerWD - Before find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:26:03.655  INFO  manager.ListenerWD - After find elements ->>>>By.xpath: //button[text()='Sign Out']
+20:26:03.655  INFO  manager.ListenerWD - List suze is ->>>>1
+20:26:03.655  INFO  tests.TestBase - Tests success
+20:26:03.656  INFO  manager.ListenerTNG - onTestSuccess ->>>>>>loginSuccess
+20:26:03.659  INFO  manager.ListenerTNG - onFinish->>>>>Gradle test

@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/QA_36_Phonebook.main.iml" filepath="$PROJECT_DIR$/.idea/modules/QA_36_Phonebook.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/QA_36_Phonebook.test.iml" filepath="$PROJECT_DIR$/.idea/modules/QA_36_Phonebook.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.telran.QA_36_Phonebook.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.telran.QA_36_Phonebook.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.telran.QA_36_Phonebook.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.telran.QA_36_Phonebook.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.QA_36_Phonebook.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.QA_36_Phonebook.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.QA_36_Phonebook.test.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.QA_36_Phonebook.test.iml" />
     </modules>
   </component>
 </project>
