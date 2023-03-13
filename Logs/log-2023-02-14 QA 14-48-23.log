@@ -1,0 +1,5 @@
+14:48:27.225  INFO  manager.ListenerTNG - onStart->>>>>Gradle test
+14:48:27.255  INFO  tests.TestBase - The name of starts method is --->loginWrongEmail
+14:48:27.513  INFO  manager.ListenerTNG - onTestStart->>>>>loginWrongEmail
+14:48:27.514  INFO  manager.ListenerTNG - onTestSkipped->>>>>loginWrongEmail
+14:48:27.518  INFO  manager.ListenerTNG - onFinish->>>>>Gradle test
